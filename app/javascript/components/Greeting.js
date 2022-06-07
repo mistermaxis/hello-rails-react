@@ -1,5 +1,6 @@
 import React from "react"
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 import { getGreeting } from "../features/greeting/greetingSlice";
 
 class Greeting extends React.Component {
@@ -10,6 +11,7 @@ class Greeting extends React.Component {
   render () {
     return (
       <React.Fragment>
+        <Link to="/">Index</Link>
         <div>{this.props.greeting.message}</div>
       </React.Fragment>
     );

@@ -10,7 +10,6 @@ class App extends React.Component {
     return (
       <Provider store={store}>
         <BrowserRouter>
-          <Link to="/greeting">Greeting</Link>
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/greeting" element={<Greeting />} />
